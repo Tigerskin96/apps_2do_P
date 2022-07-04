@@ -1,0 +1,16 @@
+create database base_app;
+
+use base_app; 
+
+create table users (
+nombre varchar(45), 
+email varchar (45), 
+sexo varchar (10),
+hobbies varchar(20),
+carrera varchar(20),
+comentarios varchar(20), 
+username varchar (30) not null,
+password varchar(45) not null);
+
+insert into users values('david', 'test@mail.com', 'masulino', 'null','null', 'null', 'admin', '1234');
+insert into users values('test', 'test@mail.com', 'masulino',' ',' ', ' ', 'root', 'admin');

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css" /> 
+</head>
+<body>
+  <header>
+    <div>
+      <h1> Sistema CRUD</h1>
+  </div>
+  </header>
+  <main>
+    <form action="register.php" method="post">
+      <h1> Registro de usuarios</h1>
+      <div class="container1">
+        <input type="text" placeholder="Nombre" name="nombre" required>
+        <input type="text" placeholder="Email" name="email" required>
+        <br><br>
+        <B>GENERO </B> <br>
+        <INPUT TYPE="radio" value ="Hombre" name="sexo" id="Hombre" > 
+        <LABEL >Hombre</label>
+        <INPUT TYPE="radio" value ="Mujer" name="sexo" id="Mujer" > 
+        <LABEL >Mujer</label>
+        <INPUT TYPE="radio" value="OTRO" name="sexo" id="OTRO" > 
+        <LABEL >Otro</label> <br> <br>      
+
+        <B>HOBBIES </B><br>
+        <input type="checkbox" id="MUSICA" name="hobbie[]" value="musica">
+          <label > MUSICA </label>
+        <input type="checkbox" id="Deporte" name="hobbie[]" value="deporte">
+          <label > DEPORTES </label>
+        <input type="checkbox" id="TECNOLOGIA" name="hobbie[]" value="Tecnologia">
+          <label > TECNO  </label>
+        <input type="checkbox" id="COKTAIL" name="hobbie[]" value="Coktail">
+          <label > COKTAIL </label>
+        <input type="checkbox" id="Danza Ex" name="hobbie[]" value="Danza Ex">
+          <label > DANZA EXOTICA </label> <br><br>
+        
+          <label for="CARRERA"><B>CARRERA </B> </label>
+            <select name="CARRERA" id="CARRERA">
+              <option value="empty"></option>
+              <option value="INFORMATICA">Informatica</option>
+              <option value="CONTABILIDAD">Contabilidad</option>
+              <option value="TEC. AMBIENTAL ">Tec. Ambiental</option>
+            </select><br><br>
+
+        <input type="text" placeholder="Usuario" name="username" required>
+
+        <input type="password" placeholder="Nueva Contraseña" name="password" required>
+        
+        <label for="COMENTARIOS"><B>COMENTARIOS:</B></label>
+        <textarea id="COMENTARIOS" name="COMENTARIOS" rows="3" cols="50"></textarea> <br><br>  
+
+        <label for="myfile"><B>Archivo </B></label>
+        <input type="file" id="myfile" name="myfile">   
+        
+        <div class="clearfix">
+            <button type="submit" class="signupbtn">Registrarse</button>
+            <button type="reset" class="cancelbtn"><a href="login.html">Cancelar</a></button>
+          </div>
+          </div>
+    </form>
+  </main>
+  <footer>
+    <div>
+      <section>
+          <address>Cdmx, México</address>
+          <small>&copy; Derechos Reservados 2022 David Diaz Pachuca//Tigerskin </small>
+      </section>
+  </div>
+  </footer>
+</body>
+</html>
